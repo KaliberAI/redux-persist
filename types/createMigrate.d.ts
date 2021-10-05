@@ -1,5 +1,5 @@
-declare module "redux-persist/es/createMigrate" {
-  import { MigrationManifest, PersistMigrate, PersistedState } from "redux-persist/es/types";
+declare module "redux-persist-kaliber/es/createMigrate" {
+  import { MigrationManifest, PersistMigrate, PersistedState } from "redux-persist-kaliber/es/types";
 
   interface MigrationConfig {
     debug: boolean;
@@ -14,7 +14,7 @@ declare module "redux-persist/es/createMigrate" {
   export default function createMigrate(migrations: MigrationManifest, config?: MigrationConfig): PersistMigrate;
 }
 
-declare module "redux-persist/lib/createMigrate" {
-  export * from "redux-persist/es/createMigrate";
-  export { default } from "redux-persist/es/createMigrate";
+declare module "redux-persist-kaliber/lib/createMigrate" {
+  export * from "redux-persist-kaliber/es/createMigrate";
+  export { default } from "redux-persist-kaliber/es/createMigrate";
 }

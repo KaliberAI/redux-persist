@@ -1,6 +1,6 @@
-declare module "redux-persist/es/persistReducer" {
+declare module "redux-persist-kaliber/es/persistReducer" {
   import { Action, Reducer } from "redux";
-  import { PersistState, PersistConfig } from "redux-persist/es/types";
+  import { PersistState, PersistConfig } from "redux-persist-kaliber/es/types";
 
   interface PersistPartial {
     _persist: PersistState;
@@ -15,7 +15,7 @@ declare module "redux-persist/es/persistReducer" {
   export default function persistReducer<S, A extends Action = Action>(config: PersistConfig<S>, baseReducer: Reducer<S, A>): Reducer<S & PersistPartial, A>;
 }
 
-declare module "redux-persist/lib/persistReducer" {
-  export * from "redux-persist/es/persistReducer";
-  export { default } from "redux-persist/es/persistReducer";
+declare module "redux-persist-kaliber/lib/persistReducer" {
+  export * from "redux-persist-kaliber/es/persistReducer";
+  export { default } from "redux-persist-kaliber/es/persistReducer";
 }

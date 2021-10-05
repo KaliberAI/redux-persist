@@ -1,6 +1,6 @@
-declare module "redux-persist/integration/react" {
+declare module "redux-persist-kaliber/integration/react" {
   import { ReactNode, PureComponent } from "react";
-  import { Persistor } from "redux-persist/es/types";
+  import { Persistor } from "redux-persist-kaliber/es/types";
 
   /** @see PersistGate */
   interface PersistGateProps {
@@ -24,10 +24,10 @@ declare module "redux-persist/integration/react" {
   class PersistGate extends React.PureComponent<PersistGateProps, PersistorGateState> {}
 }
 
-declare module "redux-persist/es/integration/react" {
-  export * from "redux-persist/integration/react";
+declare module "redux-persist-kaliber/es/integration/react" {
+  export * from "redux-persist-kaliber/integration/react";
 }
 
-declare module "redux-persist/lib/integration/react" {
-  export * from "redux-persist/integration/react";
+declare module "redux-persist-kaliber/lib/integration/react" {
+  export * from "redux-persist-kaliber/integration/react";
 }

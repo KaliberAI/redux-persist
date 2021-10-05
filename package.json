@@ -1,11 +1,11 @@
 {
-  "name": "redux-persist",
-  "version": "6.0.0",
-  "description": "persist and rehydrate redux stores",
+  "name": "redux-persist-kaliber",
+  "version": "6.0.4",
+  "description": "Kaliber's Redux Persist - persist and rehydrate redux stores",
   "main": "lib/index.js",
   "module": "es/index.js",
   "types": "./types/index.d.ts",
-  "repository": "rt2zz/redux-persist",
+  "repository": "KaliberAI/redux-persist",
   "files": [
     "es",
     "src",

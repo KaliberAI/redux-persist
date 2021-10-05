@@ -23,16 +23,16 @@
 
 // This is not single module. There are many module included by reference directives.
 // tslint:disable-next-line: no-single-declare-module
-declare module "redux-persist" {
-  export { default as persistReducer } from 'redux-persist/es/persistReducer';
-  export { default as persistCombineReducers } from 'redux-persist/es/persistCombineReducers';
-  export { default as persistStore } from 'redux-persist/es/persistStore';
-  export { default as createMigrate } from 'redux-persist/es/createMigrate';
-  export { default as createTransform } from 'redux-persist/es/createTransform';
-  export { default as getStoredState } from 'redux-persist/es/getStoredState';
-  export { default as createPersistoid } from 'redux-persist/es/createPersistoid';
-  export { default as purgeStoredState } from 'redux-persist/es/purgeStoredState';
+declare module "redux-persist-kaliber" {
+  export { default as persistReducer } from 'redux-persist-kaliber/es/persistReducer';
+  export { default as persistCombineReducers } from 'redux-persist-kaliber/es/persistCombineReducers';
+  export { default as persistStore } from 'redux-persist-kaliber/es/persistStore';
+  export { default as createMigrate } from 'redux-persist-kaliber/es/createMigrate';
+  export { default as createTransform } from 'redux-persist-kaliber/es/createTransform';
+  export { default as getStoredState } from 'redux-persist-kaliber/es/getStoredState';
+  export { default as createPersistoid } from 'redux-persist-kaliber/es/createPersistoid';
+  export { default as purgeStoredState } from 'redux-persist-kaliber/es/purgeStoredState';
 
-  export * from "redux-persist/es/constants";
-  export * from "redux-persist/es/types";
+  export * from "redux-persist-kaliber/es/constants";
+  export * from "redux-persist-kaliber/es/types";
 }
